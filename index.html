@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ONG Elo Infinito | Acolhimento e inclusão</title>
+  <meta name="description" content="A ONG Elo Infinito apoia pessoas com autismo, paralisia cerebral e deficiência visual e conecta famílias, voluntários e doadores.">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <!-- Lexend (títulos) e Atkinson Hyperlegible (texto): duas fontes desenhadas para facilitar a leitura -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Lexend:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Cabeçalho e navegação (desktop e mobile) -->
+  <header class="topo">
+    <div class="container topo__interno">
+      <a class="marca" href="#sobre" aria-label="Elo Infinito, ir para o início">
+        <img class="marca__simbolo" src="img/logo-simbolo.svg" alt="" width="58" height="31">
+        <span class="marca__nome">Elo Infinito</span>
+      </a>
+
+      <button id="btn-menu" class="btn-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="btn-menu__texto">Menu</span>
+      </button>
+
+      <nav id="menu-principal" class="menu" aria-label="Principal">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#atuacao">Atuação</a></li>
+          <li><a href="#acessibilidade-libras">Acessibilidade</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a class="btn btn--destaque" href="#participe">Quero ajudar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- Seção Institucional de Apresentação -->
+    <section id="sobre" class="hero" aria-labelledby="titulo-apresentacao">
+      <div class="container grade hero__grade">
+        <div class="hero__texto col-lg-7 col-xl-6">
+          <h1 id="titulo-apresentacao">ONG Elo Infinito</h1>
+          <p class="hero__slogan"><strong>Slogan:</strong> Conectando corações, transformando vidas e acolhendo todas as diferenças.</p>
+          <p>
+            Nossa missão é promover o acolhimento, inclusão e apoio integral a pessoas com autismo (TEA),
+            paralisia cerebral/infantil e deficiência visual, conectando famílias, voluntários e doadores em uma rede solidária.
+          </p>
+
+          <div class="acoes" data-sem-leitura>
+            <a class="btn btn--primario" href="#participe">Quero participar</a>
+            <!-- Botão de Acessibilidade: Leitura em Voz Alta -->
+            <button id="btn-speak-about" class="btn btn--destaque" type="button">
+              <span aria-hidden="true">🔊</span>
+              <span class="texto">Ouvir apresentação da ONG</span>
+            </button>
+          </div>
+        </div>
+
+        <figure class="hero__figura col-lg-5 col-xl-6" data-sem-leitura>
+          <img src="img/hero-ilustracao.svg" width="560" height="460"
+               alt="Cinco pessoas de idades diferentes de mãos dadas sob um símbolo do infinito colorido. Entre elas, uma pessoa com bengala, uma em cadeira de rodas e uma criança com fones de proteção auditiva.">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Áreas de atuação (cards) -->
+    <section id="atuacao" class="secao" aria-labelledby="titulo-atuacao">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h2 id="titulo-atuacao">Quem acolhemos</h2>
+          <p>Três frentes de apoio, pensadas junto com as famílias.</p>
+        </header>
+
+        <div class="grade">
+          <article class="cartao cartao--area cartao--tea col-md-6 col-lg-4">
+            <img class="icone" src="img/icone-tea.svg" alt="" width="72" height="72">
+            <h3>Autismo (TEA)</h3>
+            <p>Apoio a crianças, jovens e adultos com autismo, respeitando as necessidades sensoriais e de comunicação de cada pessoa.</p>
+            <button class="btn btn--contorno-escuro" type="button" data-area="tea">Saber mais sobre autismo</button>
+          </article>
+
+          <article class="cartao cartao--area cartao--pc col-md-6 col-lg-4">
+            <img class="icone" src="img/icone-pc.svg" alt="" width="72" height="72">
+            <h3>Paralisia cerebral e infantil</h3>
+            <p>Suporte às famílias, com foco em autonomia, mobilidade e participação social.</p>
+            <button class="btn btn--contorno-escuro" type="button" data-area="pc">Saber mais sobre paralisia cerebral</button>
+          </article>
+
+          <article class="cartao cartao--area cartao--dv col-md-12 col-lg-4">
+            <img class="icone" src="img/icone-dv.svg" alt="" width="72" height="72">
+            <h3>Deficiência visual</h3>
+            <p>Ações para que pessoas cegas e com baixa visão acessem informação, atividades e esta plataforma.</p>
+            <button class="btn btn--contorno-escuro" type="button" data-area="dv">Saber mais sobre deficiência visual</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Recursos de Acessibilidade e Libras -->
+    <section id="acessibilidade-libras" class="secao faixa" aria-labelledby="titulo-libras">
+      <div class="container grade duas-colunas">
+        <div class="col-md-6">
+          <h2 id="titulo-libras">Acessibilidade e Apresentação em LIBRAS</h2>
+          <p>
+            Esta plataforma conta com tradução automática para a Língua Brasileira de Sinais (LIBRAS) via Avatar 3D,
+            opções de alto contraste, ajuste do tamanho do texto e leitura em voz alta.
+          </p>
+          <p>Para ativar o avatar, use o botão azul de LIBRAS no canto da tela.</p>
+        </div>
+
+        <div class="painel col-md-6" role="group" aria-labelledby="titulo-ajustes">
+          <h3 id="titulo-ajustes">Ajustes de leitura</h3>
+          <div class="painel__controles">
+            <button id="btn-contraste" class="btn btn--primario" type="button" aria-pressed="false">Alto contraste</button>
+            <button id="btn-diminuir" class="btn btn--contorno-escuro" type="button" aria-label="Diminuir o tamanho do texto">A−</button>
+            <button id="btn-aumentar" class="btn btn--contorno-escuro" type="button" aria-label="Aumentar o tamanho do texto">A+</button>
+            <button id="btn-redefinir" class="btn btn--contorno-escuro" type="button">Restaurar padrão</button>
+          </div>
+          <p id="status-acessibilidade" class="painel__status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulário de participação -->
+    <section id="participe" class="secao" aria-labelledby="titulo-participe">
+      <div class="container grade duas-colunas">
+        <div class="col-md-5">
+          <h2 id="titulo-participe">Participe da rede</h2>
+          <p>A Elo Infinito funciona com a união de famílias, voluntários e doadores. Conte como você quer ajudar ou como podemos apoiar sua família.</p>
+          <ul class="lista-simples">
+            <li><strong>Voluntariado:</strong> doe seu tempo e suas habilidades em atividades e eventos.</li>
+            <li><strong>Doações:</strong> fale com a equipe para conhecer as formas de contribuir.</li>
+            <li><strong>Divulgação:</strong> compartilhe nosso trabalho com quem precisa conhecer.</li>
+          </ul>
+        </div>
+
+        <form id="form-participe" class="cartao cartao--form col-md-7" novalidate aria-labelledby="titulo-form">
+          <h3 id="titulo-form">Fale com a equipe</h3>
+          <p class="ajuda">Campos com * são obrigatórios.</p>
+
+          <div class="campo">
+            <div class="campo__topo">
+              <label for="nome">Nome completo *</label>
+              <span class="estado" aria-hidden="true"></span>
+            </div>
+            <input id="nome" name="nome" type="text" autocomplete="name" required aria-describedby="erro-nome">
+            <p id="erro-nome" class="erro"></p>
+          </div>
+
+          <div class="campo">
+            <div class="campo__topo">
+              <label for="email">E-mail *</label>
+              <span class="estado" aria-hidden="true"></span>
+            </div>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="erro-email">
+            <p id="erro-email" class="erro"></p>
+          </div>
+
+          <div class="campo">
+            <div class="campo__topo">
+              <label for="telefone">Telefone ou WhatsApp</label>
+              <span class="estado" aria-hidden="true"></span>
+            </div>
+            <input id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="ajuda-telefone erro-telefone">
+            <p id="ajuda-telefone" class="ajuda">Opcional. Inclua o DDD.</p>
+            <p id="erro-telefone" class="erro"></p>
+          </div>
+
+          <div class="campo">
+            <div class="campo__topo">
+              <label for="perfil">Como você quer participar? *</label>
+              <span class="estado" aria-hidden="true"></span>
+            </div>
+            <select id="perfil" name="perfil" required aria-describedby="erro-perfil">
+              <option value="">Selecione uma opção</option>
+              <option value="voluntario">Quero ser voluntário(a)</option>
+              <option value="doador">Quero contribuir com doações</option>
+              <option value="familia">Busco apoio para minha família</option>
+              <option value="outro">Outro assunto</option>
+            </select>
+            <p id="erro-perfil" class="erro"></p>
+          </div>
+
+          <div class="campo">
+            <div class="campo__topo">
+              <label for="mensagem">Mensagem *</label>
+              <span class="estado" aria-hidden="true"></span>
+            </div>
+            <textarea id="mensagem" name="mensagem" rows="5" maxlength="500" required aria-describedby="ajuda-mensagem erro-mensagem"></textarea>
+            <p id="ajuda-mensagem" class="ajuda"><span id="contador">0/500</span> caracteres</p>
+            <p id="erro-mensagem" class="erro"></p>
+          </div>
+
+          <div class="campo campo--check">
+            <div class="campo__linha">
+              <input id="consentimento" name="consentimento" type="checkbox" required aria-describedby="erro-consentimento">
+              <label for="consentimento">Aceito que a ONG use meus dados para retornar este contato. *</label>
+            </div>
+            <p id="erro-consentimento" class="erro"></p>
+          </div>
+
+          <p id="status-form" class="status-form" role="status" aria-live="polite"></p>
+          <button class="btn btn--primario btn--bloco" type="submit">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Seção com Dados de Contato Institucional -->
+    <section id="contato" class="secao secao--contato" aria-labelledby="titulo-contato">
+      <div class="container grade duas-colunas">
+        <div class="col-md-6">
+          <h2 id="titulo-contato">Canais de Atendimento e Contato</h2>
+          <p>Entre em contato conosco para tirar dúvidas, solicitar atendimento ou agendar uma visita institucional:</p>
+        </div>
+        <address class="contato col-md-6">
+          <p><strong>Endereço da Sede:</strong> Av. da Inclusão, nº 1000 - Bairro Solidariedade, São Paulo - SP</p>
+          <p><strong>Telefone / WhatsApp:</strong> <a href="tel:+5511999998888">(11) 99999-8888</a></p>
+          <p><strong>E-mail Institucional:</strong> <a href="mailto:contato@eloinfinito.org.br">contato@eloinfinito.org.br</a></p>
+          <p><strong>Horário de Atendimento:</strong> Segunda a Sexta, das 08h às 18h</p>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__interno">
+      <p class="rodape__marca">
+        <img class="marca__simbolo" src="img/logo-simbolo.svg" alt="" width="46" height="25">
+        <span>© <span id="ano">2026</span> ONG Elo Infinito. Conectando corações, transformando vidas.</span>
+      </p>
+      <a href="#sobre">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <!-- VLibras: avatar 3D de tradução para Libras (widget gratuito do governo federal) -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    if (window.VLibras) { new window.VLibras.Widget('https://vlibras.gov.br/app'); }
+  </script>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
